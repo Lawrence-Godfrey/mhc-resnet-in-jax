@@ -1,6 +1,10 @@
-# Manifold-Constrained Hyper-Connections (mHC)
+# Manifold-Constrained Hyper-Connections (mHC) in JAX and Ray
 
-A Google Colab-compatible notebook exploring the evolution of skip connections in deep learning, from standard Residual Connections to DeepSeek's proposed **Manifold-Constrained Hyper-Connections (mHC)**.
+A notebook exploring the evolution of residual connections in deep learning, from standard Residual Connections to DeepSeek's proposed **[Manifold-Constrained Hyper-Connections (mHC)]((https://arxiv.org/abs/2512.24880))**.
+
+Each architecture is implemented using **[JAX NNX](https://flax.readthedocs.io/en/v0.8.3/experimental/nnx/index.html)**, a JAX-based (experimental) object-oriented neural network library, and trained with **[Ray Train](https://docs.ray.io/en/latest/train/train.html)**.
+
+The idea here is to introduce the basic concepts of residual connections, JAX, and Ray, all in one tutorial notebook, while also delving into the more complex research topic of mHC.
 
 ## Overview
 
@@ -22,12 +26,7 @@ This notebook implements and compares three architectures:
 
 - **JAX NNX**: Object-oriented neural network API for JAX
 - **Ray Data/Train**: Distributed data loading and training
-- **CIFAR-100**: Dataset for benchmarking
 
 ## Usage
 
 Open `mhc_notebook.ipynb` in Google Colab or Jupyter and run all cells.
-
-## References
-
-- [mHC: Manifold-Constrained Hyper-Connections (arXiv:2512.24880)](https://arxiv.org/abs/2512.24880)
